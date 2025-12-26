@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>С днём рождения!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9acb, #ffd1e8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Segoe UI", sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        h1 {
+            color: #ff4f9a;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        p {
+            color: #444;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Сердечки */
+        .heart {
+            position: absolute;
+            color: #ff4f9a;
+            font-size: 20px;
+            animation: fly 6s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translateY(100vh) scale(1);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>С днём рождения!</h1>
+        <p>
+            Поздравляю тебя с днем рождения!<br><br>
+            Начнем с того что ты Назерке — мой самый любимый человек ❤️,
+            я дорожу абсолютно всеми моментами, проведенными с тобой вместе,
+            и надеюсь наше с тобой общение не всего ограничится двумя
+            (первый др был фейк) если можно так сказать совместно проведенными
+            днями рождениями, а будет продолжать всю жизнь :3<br><br>
+            Желаю тебе всего наилучшего в жизни!
+            Чтобы не болела, высыпалась, училки не звали на олимпиады
+            и чтобы родители мозги не ебали.
+            Самое главное — чтобы ты была счастлива по жизни!
+        </p>
+    </div>
+
+    <!-- Летающие сердечки -->
+    <span class="heart" style="left:10%; animation-delay:0s;">❤️</span>
+    <span class="heart" style="left:25%; animation-delay:1s;">💖</span>
+    <span class="heart" style="left:40%; animation-delay:2s;">💕</span>
+    <span class="heart" style="left:55%; animation-delay:3s;">💗</span>
+    <span class="heart" style="left:70%; animation-delay:4s;">💓</span>
+    <span class="heart" style="left:85%; animation-delay:5s;">❤️</span>
+
+</body>
+</html>
